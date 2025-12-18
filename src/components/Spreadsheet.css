@@ -1,0 +1,76 @@
+/* ===== GLOBAL LOOK FIX ===== */
+body {
+  background: #f4f6fb;
+}
+
+/* Main card */
+.spreadsheet {
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ===== GRID ===== */
+.grid-container {
+  background: #e5e7eb;
+}
+
+.cell {
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+}
+
+.cell:hover {
+  background: #f9fafb;
+}
+
+.cell.header {
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+
+/* Selected / active cell */
+.cell.editing,
+.cell:focus-within {
+  outline: 2px solid #4f46e5;
+  z-index: 2;
+}
+
+/* ===== INSTRUCTIONS (SOFT DARK, NOT BLACK) ===== */
+.instructions {
+  background: #eef2ff;          /* light indigo */
+  color: #1e293b;
+  border-left: 6px solid #4f46e5;
+}
+
+.instructions h3 {
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.instructions ul,
+.instructions ol,
+.instructions li {
+  color: #1e293b;
+}
+
+/* Example numbers */
+.instructions ol li::marker {
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+/* Code blocks */
+.instructions code {
+  background: #e0e7ff;
+  color: #3730a3;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+
+/* Errors */
+.cell.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
